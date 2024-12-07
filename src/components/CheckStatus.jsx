@@ -149,8 +149,8 @@ export const CheckStatus = () => {
         <div className="text-white">
           <div className="mb-8 flex flex-col items-center">
             <img
-              src="https://www.itcportal.com/images/logo_itc.png"
-              className="h-[100px]"
+              src="https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/jszi6hjkqttfrhtd4hgq"
+              className="h-[100px] rounded-full mix-blend-multiply"
               alt="Instagram Logo"
             />
             <h1 className="mb-2 text-2xl">Login</h1>

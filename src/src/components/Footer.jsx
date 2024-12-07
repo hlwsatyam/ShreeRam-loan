@@ -8,7 +8,7 @@ export default function Footer({ isOpen, setIsOpen }) {
       
         { name: "Benefits", href: "#benefits" },
         { name: "Application Process", href: "#application" },
-        { name: "Why Choose Jio?", href: "#jio" },
+        { name: "Why Choose us?", href: "#jio" },
         { name: "Testimonials", href: "#testimonials" },
         { name: "FAQs", href: "#faqs" },
         { name: "Contact Us", href: "#contact" },

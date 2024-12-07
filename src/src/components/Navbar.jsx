@@ -7,7 +7,7 @@ function Navbar({ isFormOpen, setIsFormOpen }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="z-40 py-2 !text-white">
+    <nav className="!text-white z-40 py-2">
       <Container>
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-4">
@@ -23,7 +23,7 @@ function Navbar({ isFormOpen, setIsFormOpen }) {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#home"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   Home
                 </a>
@@ -35,45 +35,51 @@ function Navbar({ isFormOpen, setIsFormOpen }) {
                 </a> */}
                 <a
                   href="#eligibility"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   Eligibility Criteria
                 </a>
                 <a
                   href="#benefits"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   Benefits
                 </a>
                 <a
                   href="#application"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   Application Process
                 </a>
                 <a
                   href="#jio"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   Why Choos Us?
                 </a>
                 <a
                   href="#testimonials"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   Testimonials
                 </a>
                 <a
                   href="#faqs"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   FAQs
                 </a>
                 <a
                   href="#contact"
-                  className="hover:bg-button-primary rounded-md px-3 py-2 text-sm font-medium hover:text-white"
+                  className="hover:text-white rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
                 >
                   Contact Us
+                </a>
+                <a
+                  href="/check-status"
+                  className="hover:text-white border-b-2 border-e-primary-end  rounded-md px-3 py-2 text-sm font-medium hover:bg-button-primary"
+                >
+                  Check Loan Status{" "}
                 </a>
               </div>
             </div>
@@ -83,7 +89,7 @@ function Navbar({ isFormOpen, setIsFormOpen }) {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button !border-none"
-              className="h-12 w-12 bg-gray-800"
+              className="bg-gray-800 h-12 w-12"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -95,10 +101,10 @@ function Navbar({ isFormOpen, setIsFormOpen }) {
 
         {isOpen && (
           <div className="transition-all md:hidden" id="mobile-menu">
-            <div className="space-y-1 px-2 pb-3 pt-2 text-black sm:px-3">
+            <div className="text-black space-y-1 px-2 pb-3 pt-2 sm:px-3">
               <a
                 href="#home"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 Home
               </a>
@@ -110,45 +116,51 @@ function Navbar({ isFormOpen, setIsFormOpen }) {
               </a> */}
               <a
                 href="#eligibility-criteria"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 Eligibility Criteria
               </a>
               <a
                 href="#benefits"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 Benefits
               </a>
               <a
                 href="#application-process"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 Application Process
               </a>
               <a
                 href="#why-choose-jio"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 Why Choos Us?
               </a>
               <a
                 href="#testimonials"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 Testimonials
               </a>
               <a
                 href="#faqs"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 FAQs
               </a>
               <a
                 href="#contact-us"
-                className="hover:bg-primary-base hover:bg-button-primary block rounded-md px-3 py-2 text-base font-medium hover:text-white"
+                className="hover:bg-primary-base hover:text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-button-primary"
               >
                 Contact Us
+              </a>
+              <a
+                href="/check-status"
+                className="hover:text-white rounded-md  border-b-2 border-e-primary-end  px-3 py-2 text-sm font-medium hover:bg-button-primary"
+              >
+                Check Loan Status{" "}
               </a>
             </div>
           </div>
